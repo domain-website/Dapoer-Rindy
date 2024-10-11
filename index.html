@@ -19,6 +19,7 @@
   <body class="min-h-screen bg-gray-50">
     <header
       class="flex justify-between w-full fixed top-0 bg-red-800 p-4 z-10 items-center"
+      id="home"
     >
       <!-- Logo -->
       <div class="flex items-center gap-2">
@@ -32,7 +33,7 @@
 
       <!-- Desktop Menu -->
       <nav class="hidden md:flex items-center gap-8">
-        <a href="#" class="font-bold text-white hover:text-gray-200">Home</a>
+        <a href="#home" class="font-bold text-white hover:text-gray-200">Home</a>
         <a href="#food-menu" class="font-bold text-white hover:text-gray-200"
           >Food Menu</a
         >
@@ -64,7 +65,7 @@
         id="mobileMenu"
         class="hidden md:hidden absolute top-full left-0 w-full bg-red-800 text-center"
       >
-        <a href="#" class="font-bold text-white block py-2 hover:bg-red-700"
+        <a href="#home" class="font-bold text-white block py-2 hover:bg-red-700"
           >Home</a
         >
         <a
@@ -320,7 +321,7 @@
     </section>
 
     <!-- Contact Form -->
-    <div class="container mx-auto px-50 bg-white p-8">
+    <div class="container mx-auto px-50 bg-white p-8" id="contact">
       <h3 class="text-2xl font-bold mb-6">Hubungi Kami</h3>
       <form id="contactForm" class="space-y-5">
         <div>
