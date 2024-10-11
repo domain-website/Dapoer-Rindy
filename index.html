@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dapoer Rindy - Enjoy authentic, delicious food made with love. Explore our menu and order now!"
+    />
+    <title>Dapoer Rindy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <header
+      class="flex justify-between w-full fixed top-0 bg-red-800 p-4 z-10 items-center"
+    >
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img
+          src="logo.png"
+          alt="Dapoer Rindy Logo"
+          class="w-10 h-10 rounded-full"
+        />
+        <p class="text-white font-bold text-3xl">Dapoer Rindy</p>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#" class="font-bold text-white hover:text-gray-200">Home</a>
+        <a href="#food-menu" class="font-bold text-white hover:text-gray-200"
+          >Food Menu</a
+        >
+        <a href="#contact" class="font-bold text-white hover:text-gray-200"
+          >Contact Us</a
+        >
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <div id="menuToggle" class="md:hidden cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-8 w-8 text-white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+          />
+        </svg>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobileMenu"
+        class="hidden md:hidden absolute top-full left-0 w-full bg-red-800 text-center"
+      >
+        <a href="#" class="font-bold text-white block py-2 hover:bg-red-700"
+          >Home</a
+        >
+        <a
+          href="#food-menu"
+          class="font-bold text-white block py-2 hover:bg-red-700"
+          >Food Menu</a
+        >
+        <a
+          href="#contact"
+          class="font-bold text-white block py-2 hover:bg-red-700"
+          >Contact Us</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="w-full container mx-auto px-30 flex flex-col-reverse md:flex-row items-center py-36 md:py-24 md:px-16"
+    >
+      <!-- Text Content -->
+      <div class="md:w-1/2 text-center md:text-left space-y-5">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
+          Dapoer Rindy Bikin Nagiih!!
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600">
+          Nikmati cita rasa asli dari dapur kami, disiapkan dengan penuh cinta
+          dan bahan alami yang menggugah selera.
+        </p>
+        <button
+          class="bg-red-600 text-white py-3 px-6 rounded-lg text-lg hover:bg-red-700 transition duration-300"
+        >
+          Pesan Sekarang
+        </button>
+      </div>
+
+      <!-- Image Content -->
+      <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+        <img
+          src="hero.png"
+          alt="Delicious Food"
+          class="w-full h-auto max-w-sm md:max-w-md lg:max-w-lg"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="food-menu" class="container mx-auto px-5 py-20">
+      <div class="text-center py-10">
+        <p class="text-gray-500 uppercase">Menu Makanan & Minuman</p>
+        <h1 class="font-bold text-4xl">Mari Pesan Sekarang!</h1>
+        <p class="text-gray-600 mt-4">
+          Kami berkomitmen untuk menyajikan makanan dan minuman berkualitas
+          tinggi yang pasti menggugah selera.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+        <!-- Menu Makanan -->
+        <div>
+          <h2 class="text-3xl font-bold mb-5">Menu Makanan</h2>
+          <div class="grid grid-cols-1 gap-5">
+            <!-- Menu Item 1 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Mie Level DR</h3>
+              <p class="text-gray-600 mt-2">Harga: 10k</p>
+              <p class="text-gray-600 mt-2">
+                Mie pedas yang siap menantang selera Anda.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Mie Jebew DR</h3>
+              <p class="text-gray-600 mt-2">Harga: 10k</p>
+              <p class="text-gray-600 mt-2">
+                Mie khas dengan bumbu rahasia yang menggugah selera.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Wonton Chili Oil DR</h3>
+              <p class="text-gray-600 mt-2">Harga: 10k</p>
+              <p class="text-gray-600 mt-2">
+                Wonton dengan saus chili oil yang pedas dan menggugah selera.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Udang Keju DR (isi 3)</h3>
+              <p class="text-gray-600 mt-2">Harga: 10k</p>
+              <p class="text-gray-600 mt-2">
+                Udang crispy dengan isian keju yang lezat.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Udang Rambutan DR (isi 3)</h3>
+              <p class="text-gray-600 mt-2">Harga: 10k</p>
+              <p class="text-gray-600 mt-2">
+                Udang dengan balutan crispy yang unik.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 6 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Pangsit Goreng (isi 3)</h3>
+              <p class="text-gray-600 mt-2">Harga: 10k</p>
+              <p class="text-gray-600 mt-2">
+                Pangsit goreng yang renyah dan lezat.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Minuman -->
+        <div>
+          <h2 class="text-3xl font-bold mb-5">Menu Minuman</h2>
+          <div class="grid grid-cols-1 gap-5">
+            <!-- Menu Item 1 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Es Teh STD</h3>
+              <p class="text-gray-600 mt-2">Harga: 3k</p>
+              <p class="text-gray-600 mt-2">
+                Minuman teh segar untuk menyegarkan hari Anda.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Es Teh Jumbo</h3>
+              <p class="text-gray-600 mt-2">Harga: 5k</p>
+              <p class="text-gray-600 mt-2">
+                Es teh dengan porsi besar untuk kesegaran lebih.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Yakult Tea</h3>
+              <p class="text-gray-600 mt-2">Harga: 8k</p>
+              <p class="text-gray-600 mt-2">
+                Teh segar dengan tambahan yakult yang sehat.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Milktea Series</h3>
+              <p class="text-gray-600 mt-2">Harga: 8k</p>
+              <p class="text-gray-600 mt-2">
+                Seri milktea yang creamy dan lezat.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Machiato Series</h3>
+              <p class="text-gray-600 mt-2">Harga: 10k</p>
+              <p class="text-gray-600 mt-2">
+                Kombinasi kopi dan susu yang sempurna.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 6 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Es Jeruk STD</h3>
+              <p class="text-gray-600 mt-2">Harga: 5k</p>
+              <p class="text-gray-600 mt-2">
+                Minuman jeruk segar yang menyehatkan.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+
+            <!-- Menu Item 7 -->
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <h3 class="text-2xl font-bold">Es Jeruk Jumbo</h3>
+              <p class="text-gray-600 mt-2">Harga: 8k</p>
+              <p class="text-gray-600 mt-2">
+                Minuman jeruk dengan porsi besar untuk kesegaran lebih.
+              </p>
+              <a
+                href="#"
+                class="inline-block mt-4 py-2 px-4 bg-red-600 text-white font-semibold rounded hover:bg-red-700"
+                >Pesan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="container mx-auto px-50 bg-white p-8">
+      <h3 class="text-2xl font-bold mb-6">Hubungi Kami</h3>
+      <form id="contactForm" class="space-y-5">
+        <div>
+          <label for="name" class="block text-lg font-semibold mb-2"
+            >Nama Anda</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+            placeholder="Masukkan nama Anda"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-lg font-semibold mb-2"
+            >Email Anda</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+            placeholder="Masukkan email Anda"
+          />
+        </div>
+        <div>
+          <label for="message" class="block text-lg font-semibold mb-2"
+            >Tulis Pesanan Anda</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+            placeholder="Tulis menu-menu pesanan Anda"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-red-600 text-white py-3 px-6 rounded-lg text-lg hover:bg-red-700 transition duration-300"
+        >
+          Kirim Pesan
+        </button>
+      </form>
+    </div>
+
+    <!-- Location -->
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Lokasi Kami</h2>
+        <p class="text-gray-600 mb-8">
+          Temukan kami di lokasi berikut, kami dengan senang hati menyambut
+          Anda!
+        </p>
+
+        <!-- Map Embed -->
+        <div
+          class="relative overflow-hidden w-full h-96 mb-8 shadow-lg rounded-lg"
+        >
+          <iframe
+            class="absolute inset-0 w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15831.678675445497!2d112.6422227!3d-7.2499833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ffdc83c4a8c9%3A0x1f06b3dd6ad20f18!2sEsteh%20Nusantara%20Surabaya!5e0!3m2!1sid!2sid!4v1728642940199!5m2!1sid!2sid"
+            frameborder="0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+
+        <!-- Address Details -->
+        <div class="text-gray-600">
+          <p class="font-bold text-lg">Restoran Dapoer Rindy</p>
+          <p>
+            Jl. Sememi Jaya Selatan Gg. 2B No.19, Sememi, Kec. Benowo, Surabaya
+          </p>
+          <p>Email: info@dapoerrindy.com | Telp: +62 859-1932-6630</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <!-- Top Section: Branding and Navigation -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start mb-6"
+        >
+          <!-- Branding -->
+          <div class="flex items-center mb-6 md:mb-0">
+            <img
+              src="logo.png"
+              alt="Logo Restoran Dapoer Rindy"
+              class="w-10 h-10 rounded-full"
+            />
+            <span class="ml-3 text-2xl font-bold">Restoran Dapoer Rindy</span>
+          </div>
+
+          <!-- Navigation Links -->
+          <nav class="flex flex-col md:flex-row md:space-x-6">
+            <a href="#" class="mb-3 md:mb-0 hover:text-red-400 transition"
+              >Home</a
+            >
+            <a href="#" class="mb-3 md:mb-0 hover:text-red-400 transition"
+              >Menu</a
+            >
+            <a href="#" class="mb-3 md:mb-0 hover:text-red-400 transition"
+              >About Us</a
+            >
+            <a href="#" class="hover:text-red-400 transition">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Middle Section: Contact Information and Social Media -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start mb-6"
+        >
+          <!-- Contact Info -->
+          <div class="text-center md:text-left">
+            <h3 class="font-bold text-xl mb-3">Contact Us</h3>
+            <p>Email: info@dapoerrindy.com</p>
+            <p>Phone: +62 859-1932-6630</p>
+            <p>
+              Address: Jl. Sememi Jaya Selatan Gg. 2B No.19, Sememi, Kec.
+              Benowo, Surabaya
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-6 md:mt-0">
+            <h3 class="font-bold text-xl mb-3">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-red-400 transition">
+                <i class="bx bxl-facebook w-6 h-6"></i>
+              </a>
+              <a href="#" class="hover:text-red-400 transition">
+                <i class="bx bxl-twitter w-6 h-6"></i>
+              </a>
+              <a href="#" class="hover:text-red-400 transition">
+                <i class="bx bxl-instagram w-6 h-6"></i>
+              </a>
+              <a href="#" class="hover:text-red-400 transition">
+                <i class="bx bxl-youtube w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section: Copyright -->
+        <div class="border-t border-gray-700 pt-4 text-center">
+          <p>&copy; 2024 Restoran Dapoer Rindy. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Mencegah form submit secara default
+
+          // Ambil nilai dari input dan textarea
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+
+          // Format pesan untuk dikirimkan via WhatsApp
+          var whatsappMessage = `Halo, saya ${name},\nEmail: ${email}\n\n${message}`;
+
+          // Ganti nomor telepon di bawah ini dengan nomor WhatsApp tujuan
+          var whatsappNumber = "81952415660"; // Format: 62 untuk Indonesia, tanpa + atau 0
+
+          // Buat URL API WhatsApp
+          var whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
+            whatsappMessage
+          )}`;
+
+          // Buka WhatsApp Web dengan pesan yang sudah dirangkai
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
+  </body>
+</html>
